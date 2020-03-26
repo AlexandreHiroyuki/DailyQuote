@@ -1,1 +1,1 @@
-"# SemanaOmnistack" 
+# SemanaOmnistack
