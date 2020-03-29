@@ -1,0 +1,31 @@
+.login-container img.logo {
+  max-width: 55%;
+  height: auto;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 1024px;
+  height: 100vh;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login-container section.form {
+  width: 100%;
+  max-width: 350px;
+}
+
+.login-container section.form p {
+  font-size: 1rem;
+  margin: 1.5vh 0;
+}
+
+.login-container section.form form h1 {
+  font-size: 2rem;
+  margin-bottom: 1vh;
+}

@@ -9,14 +9,15 @@ module.exports = {
   },
 
   async create(request, response) {
-    const { greet, signature } = request.body
+    const { greet, signature, email } = request.body
 
     const id = crypto.randomBytes(4).toString('HEX')
 
     await connection('users').insert({
       id,
       greet,
-      signature
+      signature,
+      email
     })
 
     return response.json({ id })

@@ -3,6 +3,7 @@ exports.up = function(knex) {
     table.string('id').primary()
     table.string('greet').notNullable()
     table.string('signature').notNullable()
+    table.string('email').notNullable()
   })
 }
 
