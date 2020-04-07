@@ -1,0 +1,91 @@
+.profile-container img.logo {
+  /* max-width: 30%; */
+  height: 5.2rem;
+}
+
+.profile-container {
+  width: 100%;
+  max-width: 1180px;
+  padding: 0 30px;
+}
+
+.profile-container header {
+  display: flex;
+  align-items: center;
+}
+
+.profile-container header span {
+  font-size: 1.3rem;
+  margin-left: 20px;
+}
+
+.profile-container header a {
+  width: 24rem;
+  margin-left: auto;
+  margin-top: 0;
+}
+
+.profile-container header button {
+  height: 60px;
+  width: 60px;
+  border-radius: 4px;
+  border: 1px solid #ede2c0;
+  background: transparent;
+  margin-left: 16px;
+  transition: border-color 0.2s;
+}
+.profile-container header button:hover {
+  border-color: #312f28;
+}
+
+.profile-container h1 {
+  margin-top: 5vh;
+  margin-bottom: 2.5vh;
+  font-size: 2rem;
+}
+
+.profile-container ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 24px;
+  gap: 24px;
+  list-style: none;
+}
+
+.profile-container ul li {
+  background-color: white;
+  padding: 2vw;
+  border-radius: 8px;
+  position: relative;
+}
+
+.profile-container ul li button {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  border: 0;
+  background: transparent;
+  transition: opacity 0.2s;
+}
+.profile-container ul li button:hover {
+  opacity: 0.5;
+}
+
+.profile-container ul li strong {
+  display: block;
+  margin-bottom: 1.5vh;
+  color: #1c1500;
+
+  font-size: 1.5rem;
+}
+
+.profile-container ul li p {
+  display: inline;
+  margin-left: 1rem;
+}
+
+.profile-container ul li p.signature {
+  display: block;
+  margin: 1.5rem auto 0.2rem 0.75rem;
+  opacity: 0.5;
+}

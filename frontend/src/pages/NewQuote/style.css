@@ -1,0 +1,51 @@
+.new-quote-container img.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.new-quote-container {
+  width: 100%;
+  max-width: 1024px;
+  height: 100vh;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-quote-container .content {
+  width: 100%;
+  padding: 8%;
+  background: #fffceb;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-quote-container .content section {
+  width: 90%;
+  max-width: 380px;
+}
+
+.new-quote-container .content section h1 {
+  margin: 64px 0 32px;
+  font-size: 32px;
+}
+
+.new-quote-container .content section p {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.new-quote-container .content form {
+  width: 90%;
+  max-width: 450px;
+}
+
+.new-quote-container .content form input {
+  margin-bottom: 5%;
+}

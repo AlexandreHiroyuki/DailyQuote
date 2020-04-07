@@ -1,21 +1,45 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link, useHistory } from 'react-router-dom'
 import { MdEdit } from 'react-icons/md'
 
 import './styles.css'
 
 import Logo from '../../assets/logo.png'
 
+import api from '../../services/api'
+
 export default function Login() {
+  const [id, setId] = useState('')
+  const history = useHistory()
+
+  async function handleLogin(e) {
+    e.preventDefault()
+
+    try {
+      const response = await api.post('/sessions', { id })
+
+      localStorage.setItem('userId', id)
+      localStorage.setItem('userSign', response.data.signature)
+
+      history.push('/profile')
+    } catch (err) {
+      alert('Login error, try again.')
+    }
+  }
+
   return (
     <div className='login-container'>
       <img className='logo' src={Logo} alt='Daily Quote' />
       <section className='form'>
         <p>Start writing now!</p>
 
-        <form action=''>
+        <form onSubmit={handleLogin}>
           <h1>Login:</h1>
-          <input placeholder='Your ID' />
+          <input
+            placeholder='Your ID'
+            value={id}
+            onChange={(e) => setId(e.target.value)}
+          />
           <button className='button' type='submit'>
             Login
           </button>
