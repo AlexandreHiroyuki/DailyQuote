@@ -80,12 +80,11 @@
 }
 
 .profile-container ul li p {
-  display: inline;
-  margin-left: 1rem;
+  margin-left: 0.75rem;
 }
 
 .profile-container ul li p.signature {
   display: block;
-  margin: 1.5rem auto 0.2rem 0.75rem;
+  margin: 1.5rem auto 0.2rem 0rem;
   opacity: 0.5;
 }
